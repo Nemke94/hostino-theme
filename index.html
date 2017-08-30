@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		    $("#bar").click(function(){
+		        $("#navi").toggle();
+		    });
+		});
+		</script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="add.js"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<title>Hostino</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<nav class="navigation">
+			<a class="logo" href="#"><img src="logo.png" alt="logo" height="17px" width="97px"></a>
+			<ul id="navi">
+				<li><a href="#">Home</a></li>
+				<li id="pages"><a href="#">Pages <span class="fa fa-caret-down" aria-hidden="true"></span></a>
+					<ul id="hide">
+						<li class="mar"><a href="#">About us</a></li>
+						<li class="mar"><a href="#">Web hosting plans</a></li>
+						<li class="mar"><a href="#">Domain names</a></li>
+						<li class="mar"><a href="#">Blog</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Support Portal</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Sign in</a></li>
+				<li id="box"><a id="chat" href="#">Chat now</a></li>
+			</ul>
+			<button id="bar"><span class="fa fa-bars" aria-hidden="true"></span></button>
+			<div style="clear: both"></div>
+		</nav>
+		<div class="slideshow-container1">
+			<div id="first-div" class="mySlides">
+				<div class="image">
+					<img class="image1" src="first-picture.png" alt="boy with laptop" title="Welcome!">
+				</div>
+				<div class="image-letters">
+					<h1>Take your career to the next level<br>Get your website today.</h1>
+				</div>
+				<div class="button-first-holder">
+					<button class="first-part-button">Sign up now</button>
+				</div>
+			</div> <!-- mySlides ends -->
+			<div class="mySlides">
+				<div class="image2">
+					<div class="head-holder">
+						<h1 class="head-of-second-part">Find a personal or professional domain<br>that stands out.</h1>
+					</div>
+					<div class="form-first">
+						<form class="form-first-form">
+							<input id="text-form" type="text" name="domain" placeholder="Search a domain here">
+							<input id="btn-search" type="submit" name="submit" value="Search now">
+						</form>
+					</div>
+				</div> <!-- image ends -->
+			</div> <!-- mySlides ends -->
+			<div class="mySlides">
+				<div class="image3-1">
+					<img class="image3" src="third-image.png" alt="another design" title="Get started">
+					<h1 class="take-your">Take your career to the next level<br>Get your website today.</h1>
+				</div>
+				<div class="button-first-holder">
+					<button class="first-part-button">Sign up now</button>
+				</div>
+
+			</div> <!-- mySlides ends -->
+			<div style="text-align:center">
+			  <span id="marked" class="dot" onclick="currentSlide(1)">Welcome!</span> 
+			  <span class="dot" onclick="currentSlide(2)">Search</span> 
+			  <span class="dot" onclick="currentSlide(3)">Get Started</span> 
+			</div>
+		</div><!-- slideshow-container1 ends -->
+		<div class="second-wrapper">
+			<h2 id="regret">Regret-free choise</h2>
+			<p id="utenim">adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+			<form class="all-features">
+				<input id="all-features" type="submit" name="submit" value="All Features">
+			</form>
+		</div> <!-- second-wrapper ends -->
+		<div class="third-wrapper">
+			<h1 class="text-center" id="what-makes">What makes Hostino the best choise for you?</h1>
+			<div class="row img-icon">
+				<div class="col-sm-4 bg-image">
+					<div class="holder">
+						<div class="i-con"><span class="fa fa-star" aria-hidden="true"></span></div>
+						<h3 class="icon-headline-writte">Uptime 100%. Guaranteed.</h3>
+						<p class="mauris">Mauris at libero sed justo pretium maximus ac non ex. Donec sit amet ultrices dolo.</p>	
+					</div><!-- holder ends -->
+				</div>
+				<div class="col-sm-4 bg-image">
+					<div class="holder">
+						<div class="i-con"><span class="fa fa-ticket" aria-hidden="true"></span></div>
+						<h3 class="icon-headline-writte">Readymade templates</h3>
+						<p class="mauris">Mauris at libero sed justo pretium maximus ac non ex. Donec sit amet ultrices dolo.</p>
+					</div><!-- holder ends -->
+				</div>
+				<div class="col-sm-4 bg-image">
+					<div class="holder">
+						<div class="i-con"><span class="fa fa-comments" aria-hidden="true"></span></div>
+						<h3 class="icon-headline-writte">Amazing support</h3>
+						<p class="mauris">Mauris at libero sed justo pretium maximus ac non ex. Donec sit amet ultrices dolo.</p>
+					</div><!-- holder ends -->
+				</div>
+			</div> <!-- row ends -->
+			<form class="form">
+				<input id="about-us" type="submit" name="submit" value="About us">
+			</form>
+		</div><!-- third-wrapper ends -->
+		<div class="fourth-wrapper">
+			<h3 id="our-hosting">Our hosting plans. What suite you the best?</h3>
+			<div id="row-start" class="row">
+				<div class="col-sm-4 fafa"><p><span class="fa fa-angle-right" aria-hidden="true"></span> Starter</p></div>
+				<div class="col-sm-4 fafa"><p><span class="fa fa-angle-right" aria-hidden="true"></span> Advanced</p></div>
+				<div class="col-sm-4 fafa"><p><span class="fa fa-angle-right" aria-hidden="true"></span> Superb</p></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 over-offer">
+					<div id="offer1" class="offer">
+						<h4 class="offer-head">$8.3</h4>
+						<h6 class="offer-head-sub">monthly</h6>
+						<ul class="offer-list">
+							<li class="offer-list-li"><span class="offer-list-li-s"> Storage — 10 GB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Bandwidth ( Traffic ) — 15 GB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Domain name — Free!</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Ram — 128 MB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Subdomains — 10 GB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Sharing data</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Unlimited Email Account</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s difer"> Support 24/7</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s difer"> One Click Install</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s difer"> Private SSL &amp; IP</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s difer"> Free VoIP Phone Service</span></li>
+						</ul>
+						<form class="offer-form">
+							<input class="offer-form-sub" type="submit" name="submit" value="Buy now">
+						</form>
+					</div><!-- offer ends -->
+				</div>
+				<div class="col-sm-4 over-offer">
+					<div id="offer2" class="offer">
+						<h4 class="offer-head">$12.7</h4>
+						<h6 class="offer-head-sub">monthly</h6>
+						<ul id="offer-list" class="offer-list">
+							<li class="offer-list-li"><span class="offer-list-li-s"> Storage — 10 GB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Bandwidth ( Traffic ) — 15 GB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Domain name — Free!</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Ram — 128 MB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Subdomains — 10 GB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Sharing data</li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Unlimited Email Account</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Support 24/7</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> One Click Install</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s difer"> Private SSL &amp; IP</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s difer"> Free VoIP Phone Service</span></li>
+						</ul>
+						<form class="offer-form">
+							<input class="offer-form-sub" type="submit" name="submit" value="Buy now">
+						</form>
+					</div><!-- offer ends -->
+				</div>
+				<div class="col-sm-4 over-offer">
+					<div id="offer3" class="offer">
+						<h4 class="offer-head">$46</h4>
+						<h6 class="offer-head-sub">monthly</h6>
+						<ul class="offer-list">
+							<li class="offer-list-li"><span class="offer-list-li-s"> Storage — 10 GB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Bandwidth ( Traffic ) — 15 GB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Domain name — Free!</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Ram — 128 MB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Subdomains — 10 GB</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Sharing data</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Unlimited Email Account</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Support 24/7</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> One Click Install</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Private SSL &amp; IP</span></li>
+							<li class="offer-list-li"><span class="offer-list-li-s"> Free VoIP Phone Service</span></li>
+						</ul>
+						<form class="offer-form">
+							<input class="offer-form-sub" type="submit" name="submit" value="Buy now">
+						</form>
+					</div><!-- offer ends -->
+				</div>
+			</div><!-- row ends -->
+			<a id="view" href="#">View all plans <span id="arrow" class="fa fa-arrow-right" aria-hidden="true"></span></a>
+		</div><!-- fourth-wrapper ends -->
+        <div id="apps" class="container-fluid">
+		    <div class="container">
+		        <div class="row">
+		            <div class="col-md-12">
+		                <div class="row-title" title="One-Click Install">
+		                    + The best applications on the web, with one click install.
+		                </div>
+		            </div>
+		        </div>
+		        <div class="row">
+		            <div class="col-md-12">
+		                <div class="apps-holder">
+		                    <div class="apps-links-holder">
+		                        <div class="app-icon-holder app-icon-holder1 opened" data-id="1">
+		                            <div class="app-icon">
+		                                <a href="#"><img src="wordpress.png" alt="wordpress"></a>
+		                            </div>
+		                            <div class="app-title">Wordpress</div>
+		                        </div>
+		                        <div class="app-icon-holder app-icon-holder2" data-id="2">
+		                            <div class="app-icon">
+		                                <a href="#"><img src="joomla.png" alt="joomla"></a>
+		                            </div>
+		                            <div class="app-title">Joomla</div>
+		                        </div>
+		                        <div class="app-icon-holder app-icon-holder3" data-id="3">
+		                            <div class="app-icon">
+		                                <a href="#"><img src="drupal.png" alt="drupal"></a>
+		                            </div>
+		                            <div class="app-title">Drupal</div>
+		                        </div>
+		                        <div class="app-icon-holder app-icon-holder4" data-id="4">
+		                            <div class="app-icon">
+		                                <a href="#"><img src="magento.png" alt="magento"></a>
+		                            </div>
+		                            <div class="app-title">Magento</div>
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="apps-details-holder">
+		                    <div class="app-details">
+		                        <div class="app-details1 show-details">
+		                            <div class="app-title">Wordpress Hosting</div>
+		                            <div class="app-text">
+		                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                            </div>
+		                        </div>
+		                       <!--  <div class="app-details2">
+		                            <div class="app-title">Joomla Hosting</div>
+		                            <div class="app-text">
+		                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                            </div>
+		                        </div>
+		                        <div class="app-details3">
+		                            <div class="app-title">Drupal Hosting</div>
+		                            <div class="app-text">
+		                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                            </div>
+		                        </div>
+		                        <div class="app-details4">
+		                            <div class="app-title">Magento Hosting</div>
+		                            <div class="app-text">
+		                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		                            </div>
+		                        </div> -->
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div><!-- container-fluid ends-->
+		<div class="slideshow-container">
+			<div class="headlinee">
+				<h1 id="test">Testimonials</h1>
+			</div>
+			<div id="mySlides2-i" class="mySlides2">
+				<img class="person" src="person1.jpg" alt="person1">
+				<div class="inner-headline">
+					<h4 class="chris">Chris Walker</h4>
+					<h6 class="CEO">CEO &amp; CO-Founder @HelloBrandio</h6>
+					<p class="chris-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas non ante non consequat. Aenean accumsan eros vel elit tristique, non sodales nunc luctus. Etiam vitae odio eget orci finibus auctor ut eget magna.</p>
+				</div>
+			</div><!-- mySlides2 ends -->
+			<div class="mySlides2">
+				<img class="person" src="person2.jpg" alt="person2">
+				<div class="inner-headline">
+					<h4 class="chris">Chris Walker</h4>
+					<h6 class="CEO">CEO &amp; CO-Founder @HelloBrandio</h6>
+					<p class="chris-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas non ante non consequat. Aenean accumsan eros vel elit tristique, non sodales nunc luctus. Etiam vitae odio eget orci finibus auctor ut eget magna.</p>
+				</div>
+			</div> <!-- mySlides2 ends -->
+			<button class="dot2 view-div display-left">&#8592;</button>
+			<button class="dot2 view-div display-right">&#8594;</button>
+		</div><!-- slideshow-container ends -->
+		<div class="container-fluid">
+			<h1 id="add-more-h">And more other great features</h1>
+			<div class="row">
+				<div class="col-sm-4">
+					<img class="picturess" src="feature1.png" alt="feature">
+					<h4 class="part-headline">%99.9 Uptime</h4>
+					<p class="paragraph-part-headline">Mauris at libero sed justo pretium maximus ac non ex. Donec sit amet ultrices dolo.</p>
+				</div>
+  				<div class="col-sm-4">
+  					<img class="picturess" src="feature2.png" alt="feature">
+  					<h4 class="part-headline">Domain Names</h4>
+  					<p class="paragraph-part-headline">Mauris at libero sed justo pretium maximus ac non ex. Donec sit amet ultrices dolo.</p>
+  				</div>
+  				<div class="col-sm-4">
+  					<img class="picturess" src="feature3.png" alt="feature">
+  					<h4 class="part-headline">Environment Friendly</h4>
+  					<p class="paragraph-part-headline">Mauris at libero sed justo pretium maximus ac non ex. Donec sit amet ultrices dolo.</p>
+  				</div>
+			</div><!-- row ends -->
+			<div class="row">
+				<div class="col-sm-4">
+					<img class="picturess" src="feature4.png" alt="feature">
+					<h4 class="part-headline">Secure Servers</h4>
+					<p class="paragraph-part-headline">Mauris at libero sed justo pretium maximus ac non ex. Donec sit amet ultrices dolo.</p>
+				</div>
+  				<div class="col-sm-4">
+  					<img class="picturess" src="feature5.png" alt="feature">
+  					<h4 class="part-headline">Page Builder</h4>
+  					<p class="paragraph-part-headline">Mauris at libero sed justo pretium maximus ac non ex. Donec sit amet ultrices dolo.</p>
+  				</div>
+  				<div class="col-sm-4">
+  					<img class="picturess" src="feature6.png" alt="feature">
+  					<h4 class="part-headline">E-commerce Ready</h4>
+  					<p class="paragraph-part-headline">Mauris at libero sed justo pretium maximus ac non ex. Donec sit amet ultrices dolo.</p>
+  				</div>
+			</div><!-- row ends -->
+		</div><!-- container-fluid ends -->
+		<div class="seventh-wrapper">
+			<h1 id="namehead">Ready to rock with Hostino,<br> Register Today.</h1>
+			<div class="button-register">
+				<form>
+					<input id="button-reg" type="submit" name="submit" value="Register">
+				</form>
+			</div>
+		</div><!-- seventh-wrapper ends -->
+		<footer class="container-fluid footer">
+			<div class="row footer-row">
+				<div class="col-sm-3">
+					<h6 class="footer-row-head">Company</h6>
+						<p><a class="link-footer" href="#">About us</a></p>
+						<p><a class="link-footer" href="#">News</a></p>
+						<p><a class="link-footer" href="#">FAQ</a></p>
+						<p><a class="link-footer" href="#">Contact us</a></p>
+				</div>
+				<div class="col-sm-3">
+					<h6 class="footer-row-head">Services</h6>
+						<p><a class="link-footer" href="#">Web Hosting</a></p>
+						<p><a class="link-footer" href="#">Cloud Hosting</a></p>
+						<p><a class="link-footer" href="#">Dedicated Hosting</a></p>
+						<p><a class="link-footer" href="#">Domain Names</a></p>
+				</div>
+				<div class="col-sm-3">
+					<h6 class="footer-row-head">Other links</h6>
+						<p><a class="link-footer" href="#">Customer Portal</a></p>
+						<p><a class="link-footer" href="#">Support Portal</a></p>
+				</div>
+				<div class="col-sm-3">
+					<p class="phone"><span class="fa fa-phone" aria-hidden="true"></span> 00 285 900 38502</p>
+					<p class="phone"><span class="fa fa-envelope" aria-hidden="true"></span> hello@hostino.io</p>
+					<p class="phone"><span class="fa fa-map-marker" aria-hidden="true"></span> Bahrain, Manama<br>
+																				&nbsp;&nbsp;&nbsp;Road 398, Block 125<br>
+																				&nbsp;&nbsp;&nbsp;The City Avenue<br>
+																				&nbsp;&nbsp;&nbsp;Office 38, floor 3</p>
+				</div>
+			</div><!-- row ends -->
+			<div id="row-holder-footer" class="row">
+				<div class="col-sm-2">
+					<p class="iconsss"><a href="#"><span class="fa fa-facebook" aria-hidden="true"></span></a></p>
+				</div>
+				<div class="col-sm-2">
+					<p class="iconsss"><a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a></p>
+				</div>
+				<div class="col-sm-2">
+					<p class="iconsss"><a href="#"><span class="fa fa-youtube-play" aria-hidden="true"></span></a></p>
+				</div>
+				<div class="col-sm-2">
+					<p class="iconsss"><a href="#"><span class="fa fa-behance" aria-hidden="true"></span></a></p>
+				</div>
+				<div class="col-sm-2">
+					<p class="iconsss"><a href="#"><span class="fa fa-dribbble" aria-hidden="true"></span></a></p>
+				</div>
+				<div class="col-sm-2">
+					<p class="iconsss"><a href="#"><span class="fa fa-pinterest-p" aria-hidden="true"></span></a></p>
+				</div>
+			</div><!-- row ends -->
+		</footer><!-- container-fluid ends -->
+	</body>
+</html>
