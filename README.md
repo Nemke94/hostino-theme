@@ -1,0 +1,2 @@
+# hostino-theme
+theme
